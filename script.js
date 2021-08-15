@@ -6,7 +6,14 @@ var showNext = document.querySelector('#show-next')
 function giveChange() {
   if (!userPaidInput.value) {
     alert("Cash Paid field can't be left empty!")
-  } else if (parseInt(userPaidInput.value) === 0) {
+  } 
+  else if (!billAmountInput.value) {
+    alert("Bill Amount Field can't be empty!")
+  }
+  else if (parseInt(billAmountInput.value) <= 0) {
+    alert("Bill Amount can't be less than or equal to zero!")
+  }
+  else if (parseInt(userPaidInput.value) === 0) {
     alert("Cash Paid can't be 0!")
   } else if (parseInt(userPaidInput.value) < 0) {
     alert("Cash Paid can't be negative!")
