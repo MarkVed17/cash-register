@@ -15,9 +15,11 @@ function giveChange() {
   }
   else if (parseInt(userPaidInput.value) === 0) {
     alert("Cash Paid can't be 0!")
-  } else if (parseInt(userPaidInput.value) < 0) {
+  } 
+  else if (parseInt(userPaidInput.value) < 0) {
     alert("Cash Paid can't be negative!")
-  } else {
+  } 
+  else {
     var billAmount = parseInt(billAmountInput.value)
     var userPaid = parseInt(userPaidInput.value)
 
